@@ -17,9 +17,9 @@ class Program
         var acRepo = new InMemoryRepository<AirConditionerRemote>();
         var micRepo = new InMemoryRepository<WirelessMicrophone>();
 
-        var p1 = new ProjectorRemote { Id = "P01", Name = "Máy chiếu 1", BatteryLevel = 100 }; // Sẵn sàng, điểm 100
-        var p2 = new ProjectorRemote { Id = "P02", Name = "Máy chiếu 2", BatteryLevel = 15 };  // Không sẵn sàng (<20)
-        var p3 = new ProjectorRemote { Id = "P03", Name = "Máy chiếu 3", BatteryLevel = 80 };  // Sẵn sàng, điểm 80
+        var p1 = new ProjectorRemote { Id = "P01", Name = "Máy chiếu 1", BatteryLevel = 100 }; 
+        var p2 = new ProjectorRemote { Id = "P02", Name = "Máy chiếu 2", BatteryLevel = 15 };  
+        var p3 = new ProjectorRemote { Id = "P03", Name = "Máy chiếu 3", BatteryLevel = 80 };  
 
         var ac1 = new AirConditionerRemote { Id = "AC01", Name = "Điều hòa 1", CompatibleRooms = new HashSet<string> { "A203", "A204" } };
         var ac2 = new AirConditionerRemote { Id = "AC02", Name = "Điều hòa 2", CompatibleRooms = new HashSet<string> { "B101" } };
